@@ -10,23 +10,19 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>cp3-flowable-controller</artifactId>
+    <artifactId>cp3-flowable</artifactId>
     <name>${project.artifactId}</name>
-    <description>xxx-控制器模块</description>
+    <description>xxx服务</description>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.cp3.cloud</groupId>
-            <artifactId>cp3-flowable-biz</artifactId>
-            <version>${cp3-cloud-project.version}</version>
-        </dependency>
+    <modules>
+        <module>cp3-flowable-api</module>
+        <module>cp3-flowable-server</module>
+        <module>cp3-flowable-entity</module>
+        <module>cp3-flowable-biz</module>
+        <module>cp3-flowable-controller</module>
+    </modules>
 
-        <dependency>
-            <groupId>com.cp3.base</groupId>
-            <artifactId>cp3-security-starter</artifactId>
-        </dependency>
-
-    </dependencies>
 
 
 </project>
